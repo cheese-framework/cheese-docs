@@ -7,7 +7,8 @@ outline: deep
 ## 项目结构
 ```
 .
-├─ node_modules ---npm包存放位置。
+├─ node_modules ---npm包存放位置，会打包到最终脚本app。
+├─ dev ---开发依赖存放位置，用于开发时进行代码混淆或其他自动化操作以便快速开发，不会打包到最终脚本App。
 ├─ src
 │  └─ main
 │      └─ assets --静态资源存放位置，如找图的小图、插件、模型等。
@@ -56,8 +57,8 @@ permissions = [
 build-tools = { version = "34.0.0" }
 # 热更新 - 默认关闭
 # hot = { version = "0.0.1" , url = "http://127.0.0.1:7777/update"}
-# 代码保护 推荐打包后的app再次使用如360、腾讯等第三方加固 - 默认关闭
-# protection = { mode = "sign" , path = "",ks-key-alias = "" ,ks-pass = "" ,key-pass= "" }
+# 代码保护 推荐打包后的app再次使用如360、腾讯等第三方加固 - 默认关闭 模式：1.obfuscator 将js脚本混淆 2.cloak：汇编级别保护，将js脚本直接编译为机器码并进一步机密不可还原
+# protection = "obfuscator"
 # 架构支持 更改此项编译解包需要打开 - 默认关闭
 # ndk = ["x86_64", "arm64-v8a"]
 # 排除内置库 更改此项编译解包需要打开 - 默认关闭
