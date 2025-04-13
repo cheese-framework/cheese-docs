@@ -22,7 +22,7 @@ hero:
       text: 项目信息
       link: /other/project-information
     - theme: brand
-      text: 高级加固框架可把脚本代码转汇编不可还原
+      text: 高级加固把脚本代码转汇编不可还原
       link: https://cloak.codeocean.net
     - theme: brand
       text: 用户协议
