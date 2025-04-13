@@ -42,13 +42,13 @@ export default defineConfig({
 
 
 
-            {
-                text: '高深玩法',
-                collapsed: true,
-                items: [
-                    {text: '搭建一个网页并交互', link: '/advanced/web'},
-                ]
-            },
+            // {
+            //     text: '高深玩法',
+            //     collapsed: true,
+            //     items: [
+            //         {text: '搭建一个网页并交互', link: '/advanced/web'},
+            //     ]
+            // },
 
 
             {
