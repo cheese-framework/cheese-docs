@@ -25,9 +25,7 @@ outline: deep
 ```toml
 #项目的配置结构可能会随版本更新发生变化。为了确保配置文件正确，建议您定期访问(https://cheese.codeocean.net/other/project-information.html)获取最新的配置信息。
 # 语言绑定
-bindings= "js-node"
-# bindings= "js"
-# bindings= "ts-node"
+bindings= "js"
 # bindings= "ts"
 # ui类型
 ui = "xml"
